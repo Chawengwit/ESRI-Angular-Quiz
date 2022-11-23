@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="mapDiv" #mapDiv></div>
+
+    <div class="input">
+            <h4>Shelter Name</h4>
+            <input type="text" pInputText [(ngModel)]="name" placeholder="Shelter Name"> 
+            <button pButton type="button" label="Search" (click)="doSearchName()"></button>
+
+            <h4>Capacity</h4>
+            <input type="text" pInputText [(ngModel)]="capacity" placeholder="Capacity"> 
+            <button pButton type="button" label="Search" (click)="doSearchCapacity()"></button>
+
+            <h4>Do you have pet?</h4>
+            <p-dropdown [options]="options"[(ngModel)]="selectPet" (click)="doSearchPet($event)"></p-dropdown>
+    </div>
+
+</div>

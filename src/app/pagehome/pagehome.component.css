@@ -1,0 +1,155 @@
+/* #########  Top ######### */
+#button-home {
+    display: flex;
+    justify-content: center;
+    width: 260px;
+    padding: 15px;
+
+    text-decoration: none;
+}
+#logo p{
+    padding: 0 0 0 10px;
+    margin: 0;
+}
+
+#shelter-logo {
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(20, 160, 100);
+}
+#match-logo {
+    color: black;
+}
+
+#button-home-img {
+    display: flex;
+    height: 35px;
+}
+
+/* #########  Middle ######### */
+.middle {
+    width: 260px;
+    padding: 15px;
+}
+.middle p {
+    text-align: center;
+}
+#middle-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* #########  Bottom ######### */
+.bottom {
+    display: flex;
+}
+
+.bottom a {
+    margin: 5px;
+    text-decoration: none;
+}
+#regist {
+    background-image: url("../assets/images/renting.png");
+}
+
+#search {
+    background-image: url("../assets/images/looking.png");
+}
+
+#regist, #search {
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 20px;
+
+    padding: 5px;
+    color: black;
+}
+
+#regist:hover,#regist:active {
+    background-image: url("../assets/images/renting_active.png");
+}
+
+#search:hover,#search:active {
+    background-image: url("../assets/images/looking_active.png");
+}
+
+#regist:hover, #regist:active, #search:hover,#search:active {
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 40%;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 1px solid rgb(20, 160, 100);
+
+    border-radius: 20px;
+    background-color: rgb(20, 160, 100);
+
+    padding: 5px;
+    color: aliceblue;
+}
+
+#regist-img, #search-img {
+    display: flex;
+    margin: 30px auto 5px auto;
+}
+
+#search p, #regist p {
+    display: block;
+    padding: 0;
+    margin: 35px auto 0;
+    text-align: center;
+}
+
+/* #########  Image World ######### */
+@media only screen and (max-width: 1024px) {
+    .top-1024-home, #left-img-world {
+        display: block;
+    }
+}
+
+.top-1024-home{
+    display: block;
+    /* display: none; */
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bot-1024{
+    display: flex;
+}
+
+#left-img-world {
+    /* display: none; */
+    display: block;
+    width: 50%;
+}
+
+#img-world {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 80px;
+    max-height: 80%;
+    border-right: 1px solid  rgb(200, 200, 200);
+}
+
+#quote {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#right-function {
+    width: 50%;
+    padding-left: 80px;
+}
+
